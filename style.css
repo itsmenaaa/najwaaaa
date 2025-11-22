@@ -1,0 +1,154 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Navigasi */
+header {
+    background: #222;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Hero */
+#hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(120deg, #00bcd4, #0097a7);
+    color: white;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid white;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #0097a7;
+    padding: 0.7rem 1.2rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0097a7;
+    color: white;
+}
+
+/* Tentang */
+#about, #projects, #contact {
+    width: 80%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+/* Proyek */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.project-card p {
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Kontak */
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #0097a7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
